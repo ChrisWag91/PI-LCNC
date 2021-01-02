@@ -5,6 +5,9 @@
 
 An open source project to use a Raspberry Pi 4 as a CNC controller using Linux CNC.
 
+<a target="_blank"><img src="https://raw.githubusercontent.com/ChrisWag91/PI-LCNC/master/Graphics/F013_PI-LCNC_ISO.jpg?token=AIBWW6W5LDII5BG3TY5AYPK76CMDY"
+height="200" border="0" /></a>
+
 You can find further information about the concept in this Youtube video:
 
 <a href="https://youtu.be/qL530kJUmII
@@ -16,7 +19,8 @@ It is designed to work combined with the [*RPI Levelshifter Hat*](https://github
 RPI 4 <==> [RPI Levelshifter Hat](https://github.com/ChrisWag91/rpi_level_shifter_hat) <==> PI-LCNC <==> [CNC-BOB (=Break out Board)](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20210102040047&SearchText=cnc+breakout+board+5+axis)
 
 *Concept:*
-<a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+
+<a target="_blank"><img src="https://raw.githubusercontent.com/ChrisWag91/PI-LCNC/master/Graphics/F013_PI-LCNC_Concept.png?token=AIBWW6RPKHVK6ES6HTXSG3276CLMM"
 height="200" border="0" /></a>
 
 This repository contains the manufactoring data for the PI-LCNC adapter PCB as well as configuration instructions and files for Linux CNC.
