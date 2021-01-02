@@ -1,0 +1,11 @@
+Comment,Designator,Footprint,LCSC, LCSC
+"470uF","C2","Capacitor_SMD:CP_Elec_10x10","","C249933"
+"220uF","C3,C1,C4","Capacitor_SMD:CP_Elec_10x10","","C176670"
+"D_SS52","D1","SS52BF:SS34","","C51497"
+"Power_In_8-36","J1","TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal",""
+"rpi_5V_conn","J2","Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical",""
+"rpi_extension_5V_conn","J3","Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical","","C97262"
+"DB25_Female","J4","Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm","","C77838"
+"Power_Out_5","J5","TerminalBlock_RND:TerminalBlock_RND_205-00045_1x02_P5.00mm_Horizontal",""
+"47uH","L1","L_costum:L_14x13mm_H6mm","","C169376"
+"TD1509P5","PS1","Package_SO:PowerIntegrations_SO-8","","C97262"
