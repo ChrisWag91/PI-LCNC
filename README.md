@@ -25,7 +25,7 @@ height="200" border="0" /></a>
 
 This repository contains the manufactoring data for the PI-LCNC adapter PCB as well as configuration instructions and files for Linux CNC.
 
-<a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/PI-F013_LCNC_Board_Assembled.jpg?raw=true"
 height="200" border="0" /></a>
 
 
@@ -61,7 +61,7 @@ Please contact me under christoph.wagner91@gmail.com if you want a kit for with 
 4. Attatch Raspberry Pi to RPI Levelshifter Hat using Standoffs
 5. Attatch PI-LCNC ontop to RPI Levelshifter Hat as shown here:
 
-<a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/PI-F013_LCNC_Board_Assembled.jpg?raw=true"
 height="200" border="0" /></a>
 
 **Attention** Dont attatch the PI-LCNC Board directly to your Raspberry - It will short the 3.3V and 5V rails.
@@ -71,13 +71,13 @@ height="200" border="0" /></a>
     Remove the studs on the female LPT Connector in order to fit the Connector of the BOB directly.
     Alternaively a LPT Extension cable can be used.
 
-<a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_RPI_Stack.png?raw=true"
 height="200" border="0" /></a>
 
 7. Wire the 5V output on PI-LCNC into the "PC5V" and "PCGND" on CNC-BOB
 8. Wire the 8-36V input on PI-LCNC into the power supply of your machine
 
-<a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_CNC_Controller_Assembly_Wiring.jpg?raw=true"
 height="200" border="0" /></a>
 
 9. Wire the CNC-BOB into your Machine
@@ -107,7 +107,7 @@ http://www.linuxcnc.org/iso/linuxcnc-2.8.0-pi4.zip
     This configuration will not start out of the Box, because it expects the parport hardware to be present.
     It shoud run as as soon as the next step is done.
 
-3. Change the pinout according to the [example hal and ini file](TODO) found in this repository.
+3. Change the pinout according to the [example hal and ini file](https://github.com/ChrisWag91/PI-LCNC/tree/master/Linux%20CNC%20mod%20files) found in this repository.
 
     I would advice to copy the files from this repo and change the machineparameters to fit your machine.
     The files need to be named [Name of your machine].ini and [Name of your machine].hal.
@@ -117,13 +117,10 @@ http://www.linuxcnc.org/iso/linuxcnc-2.8.0-pi4.zip
 
     You should end up with something like that:
 
-    <a target="_blank"><img src="TODO:  ADD SOURCE FILE HERE"
+    <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/LCNC_Screeenshot.png?raw=true"
     height="200" border="0" /></a>
 
-
  
-TODO
-
 *******************************************************************************************************************************
 
 ## Warning
