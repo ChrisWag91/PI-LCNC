@@ -61,7 +61,7 @@ Please contact me under christoph.wagner91@gmail.com if you want a kit for with 
 4. Attatch Raspberry Pi to RPI Levelshifter Hat using Standoffs
 5. Attatch PI-LCNC ontop to RPI Levelshifter Hat as shown here:
 
-<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/PI-F013_LCNC_Board_Assembled.jpg?raw=true"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_RPI_Stack.png?raw=true"
 height="200" border="0" /></a>
 
 **Attention** Dont attatch the PI-LCNC Board directly to your Raspberry - It will short the 3.3V and 5V rails.
@@ -71,7 +71,7 @@ height="200" border="0" /></a>
     Remove the studs on the female LPT Connector in order to fit the Connector of the BOB directly.
     Alternaively a LPT Extension cable can be used.
 
-<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_RPI_Stack.png?raw=true"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_CNC_Controller_Assembly.jpg?raw=true"
 height="200" border="0" /></a>
 
 7. Wire the 5V output on PI-LCNC into the "PC5V" and "PCGND" on CNC-BOB
