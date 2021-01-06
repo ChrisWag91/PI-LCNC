@@ -3,7 +3,7 @@
 
 *THIS REPOSITORY IS WORK IN PROGRESS*
 
-An open source project to use a Raspberry Pi 4 as a CNC controller using Linux CNC.
+An open source project to use a Raspberry Pi 4 as a CNC controller using LinuxCNC.
 
 <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_PI-LCNC.jpg?raw=true"
 height="200" border="0" /></a>
@@ -23,7 +23,7 @@ RPI 4 <==> [RPI Levelshifter Hat](https://github.com/ChrisWag91/rpi_level_shifte
 <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_PI-LCNC_Concept.png?raw=true"
 height="200" border="0" /></a>
 
-This repository contains the manufactoring data for the PI-LCNC adapter PCB as well as configuration instructions and files for Linux CNC.
+This repository contains the manufacturing data for the PI-LCNC adapter PCB as well as configuration instructions and files for Linux CNC.
 
 <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/PI-F013_LCNC_Board_Assembled.jpg?raw=true"
 height="200" border="0" /></a>
@@ -32,15 +32,15 @@ height="200" border="0" /></a>
 Make sure to check the steps given under *Usage & Setup*
 
 ## Features
-- DC-DC Power Supply for Rapsberry (Input Voltage 8-36V)
+- DC-DC Power Supply for Rapspberry Pi (Input Voltage 8-36V)
 - Adapter for LPT connector
-- Pin header for addional 5V signals from the Raspberry Pi
+- Pin header for additional 5V signals from the Raspberry Pi
 
 ## Limitations
 - 15000 Steps / s max due to Jitter of RPI
 
 ## Get PCB kits here:
-Please contact me under christoph.wagner91@gmail.com if you want a kit for with the PCBs.
+Please contact me under christoph.wagner91@gmail.com if you want to bux a kit containing the PCBs and the hardware.
 
 ## Required Hardware
 - 1pcs  Raspberry Pi 4 (4GB or 8GB)
@@ -50,7 +50,7 @@ Please contact me under christoph.wagner91@gmail.com if you want a kit for with 
 - 3pcs  screw Terminal P= 5mm (optional)
 - 8pcs  M2.5 x 12mm Standoffs
 - 4pcs  M2.5 x 5mm Screws
-- optional mounting braket
+- optional mounting bracket
 
 ## Usage
 
@@ -58,18 +58,18 @@ Please contact me under christoph.wagner91@gmail.com if you want a kit for with 
 1. Solder up the RPI Levelshifter Hat as shown here: https://github.com/ChrisWag91/rpi_level_shifter_hat 
 2. Solder up the PI-LCNC board as shown aboth
 3. Remove the retaining standoffs from the LPT connector on the PI-LCNC board
-4. Attatch Raspberry Pi to RPI Levelshifter Hat using Standoffs
-5. Attatch PI-LCNC ontop to RPI Levelshifter Hat as shown here:
+4. Attach Raspberry Pi to RPI Levelshifter Hat using Standoffs
+5. Attach PI-LCNC on top to RPI Levelshifter Hat as shown here:
 
 <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_RPI_Stack.png?raw=true"
 height="200" border="0" /></a>
 
-**Attention** Dont attatch the PI-LCNC Board directly to your Raspberry - It will short the 3.3V and 5V rails.
+**Attention** Don’t attach the PI-LCNC Board directly to your Raspberry - It will short the 3.3V and 5V rails.
 
 6. Plug the CNC-BOB into the LPT Connector on the PI-LCNC Board
     
     Remove the studs on the female LPT Connector in order to fit the Connector of the BOB directly.
-    Alternaively a LPT Extension cable can be used.
+    Alternatively a LPT Extension cable can be used.
 
 <a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_CNC_Controller_Assembly.jpg?raw=true"
 height="200" border="0" /></a>
@@ -84,7 +84,7 @@ height="200" border="0" /></a>
 
 ### Software Setup
 1. Flash realtime capable version of Raspberry Os onto and sd card.
-You can download a precompiled RT-Raspberry Os with Linux CNC alread preinstalled from this link: 
+You can download a precompiled RT-Raspberry Os with Linux CNC alread pre installed from this link: 
 http://www.linuxcnc.org/iso/linuxcnc-2.8.0-pi4.zip
 
 2. Now we need to automatically enable the RPI Level Shifter Hat automatically on boot: 
@@ -105,13 +105,13 @@ http://www.linuxcnc.org/iso/linuxcnc-2.8.0-pi4.zip
 
     Make sure to choose **Use Gmoccapy Screen** in the tab Options
     This configuration will not start out of the Box, because it expects the parport hardware to be present.
-    It shoud run as as soon as the next step is done.
+    It should run as soon as the next step is done.
 
 3. Change the pinout according to the [example hal and ini file](https://github.com/ChrisWag91/PI-LCNC/tree/master/Linux%20CNC%20mod%20files) found in this repository.
 
-    I would advice to copy the files from this repo and change the machineparameters to fit your machine.
+    I would advise to copy the files from this repo and change the machine parameters to fit your machine.
     The files need to be named [Name of your machine].ini and [Name of your machine].hal.
-    Make sure to make a backup form the automatically generated Files, since you can copy the machine parameters from there into the new files.
+    Make sure to make a backup from the automatically generated Files, since you can copy the machine parameters from there into the new files.
 
 4. Launch Linux-CNC
 
