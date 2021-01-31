@@ -59,7 +59,7 @@ setp pwmgen.0.offset 1.05
 
 ####################d##############################################
 #           Laser Outputs
-##################################################################
+###################################################################
 
 net laser-pwr spindle.0.speed-out-abs => pwmgen.1.value
 setp pwmgen.1.enable 1
@@ -94,11 +94,15 @@ net adir		=> hal_pi_gpio.pin-21-out
 #net coolant iocontrol.0.coolant-flood		=> hal_pi_gpio.pin-11-out
 
 ##################################################################
-#           Limit Inputs
+#           Homing Inputs
 ##################################################################
 net min-home-x     <=  hal_pi_gpio.pin-32-in
 net min-home-y     <=  hal_pi_gpio.pin-33-in
 net min-home-z     <=  hal_pi_gpio.pin-10-in
+
+net min-home-x => joint.0.home-sw-in
+net min-home-y => joint.1.home-sw-in
+net min-home-z => joint.2.home-sw-in
 
 setp stepgen.0.position-scale [JOINT_0]SCALE
 setp stepgen.0.steplen 1
