@@ -84,8 +84,9 @@ height="200" border="0" /></a>
 
 ### Software Setup
 1. Flash realtime capable version of Raspberry Os onto and sd card.
-You can download a precompiled RT-Raspberry Os with Linux CNC alread pre installed from this link: 
-http://www.linuxcnc.org/iso/linuxcnc-2.8.1-pi4.zip
+You can download a precompiled RT-Raspberry Os with Linux CNC already pre installed from this link: 
+http://www.linuxcnc.org/iso/
+(use one of the -pi4 vaiants, tested with 2.8.0)
 
 2. Now we need to automatically enable the RPI Level Shifter Hat on boot: 
 
