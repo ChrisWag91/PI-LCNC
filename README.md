@@ -85,9 +85,9 @@ height="200" border="0" /></a>
 ### Software Setup
 1. Flash realtime capable version of Raspberry Os onto and sd card.
 You can download a precompiled RT-Raspberry Os with Linux CNC alread pre installed from this link: 
-http://www.linuxcnc.org/iso/linuxcnc-2.8.0-pi4.zip
+http://www.linuxcnc.org/iso/linuxcnc-2.8.1-pi4.zip
 
-2. Now we need to automatically enable the RPI Level Shifter Hat automatically on boot: 
+2. Now we need to automatically enable the RPI Level Shifter Hat on boot: 
 
     Copy the script "enable_rpi_logic_level_shifter.py" from the [here](https://github.com/ChrisWag91/rpi_level_shifter_hat/tree/master/Examples) to a local directory on your raspberry and add it to the autostart file as follows:
 
