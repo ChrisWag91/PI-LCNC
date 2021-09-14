@@ -111,8 +111,9 @@ http://www.linuxcnc.org/iso/
 3. Change the pinout according to the [example hal and ini file](https://github.com/ChrisWag91/PI-LCNC/tree/master/Linux%20CNC%20mod%20files) found in this repository.
 
     I would advise to copy the files from this repo and change the machine parameters to fit your machine.
-    The files need to be named [Name of your machine].ini and [Name of your machine].hal.
-    Make sure to make a backup from the automatically generated Files, since you can copy the machine parameters from there into the new files.
+    The files need to be named to [Name of your machine].ini and [Name of your machine].hal.
+    All references to "my-mill" in [Name of your machine].ini need to be changed to [Name of your machine].
+    Make sure to backup the automatically generated files before replacing them, since you can copy the machine parameters from there to the new files.
 
 4. Launch Linux-CNC
 
