@@ -83,14 +83,21 @@ height="200" border="0" /></a>
 9. Wire the CNC-BOB into your Machine
 
 ### Software Setup
-1. Flash realtime capable version of Raspberry Os onto and sd card.
+#### The easy way
+1. Download a prepared Raspberry Os from [here](https://sallegger-my.sharepoint.com/:f:/g/personal/christoph_wagner_sallegger_at/EgExLj0fxWFGo6Aajav-ixUBairAMp8mC_TLMlPk8y_2rw?e=mf4Wtz)
+This image has the specific changes for the RPI-Levelshifter and for the PI-LCNC board already integrated. I ships with a 3 axis configuration for a cnc router.
+2. Flash the image to an sd card
+3. Change the .ini and .hal files according to your setup. (watch this space for further details)
+
+#### The hard way
+1. Flash realtime capable version of Raspberry Os onto an sd card.
 You can download a precompiled RT-Raspberry Os with Linux CNC already pre installed from this link: 
 http://www.linuxcnc.org/iso/
 (use one of the -pi4 vaiants, tested with 2.8.0)
 
 2. Now we need to automatically enable the RPI Level Shifter Hat on boot: 
 
-    Copy the script "enable_rpi_logic_level_shifter.py" from the [here](https://github.com/ChrisWag91/rpi_level_shifter_hat/tree/master/Examples) to a local directory on your raspberry and add it to the autostart file as follows:
+    Copy the script "enable_rpi_logic_level_shifter.py" from [here](https://github.com/ChrisWag91/rpi_level_shifter_hat/tree/master/Examples) to a local directory on your raspberry and add it to the autostart file as follows:
 
     ```console	
     sudo nano /etc/rc.local
