@@ -84,7 +84,7 @@ height="200" border="0" /></a>
 
 ### Software Setup
 #### The easy way
-1. Download a prepared Raspberry Os from [here](https://sallegger-my.sharepoint.com/:f:/g/personal/christoph_wagner_sallegger_at/EgExLj0fxWFGo6Aajav-ixUBairAMp8mC_TLMlPk8y_2rw?e=mf4Wtz).
+1. Download a prepared Raspberry Os from [here](https://www.dropbox.com/sh/l94gdvck4vsez5p/AADse_YKg0QH7fYXPkOonCiGa?dl=0).
 This image has the specific changes for the RPI-Levelshifter and for the PI-LCNC board already integrated. I ships with a 3 axis configuration for a cnc router.
 2. Flash the image to an sd card
 3. Change the .ini and .hal files according to your setup. (watch this space for further details)
