@@ -21,11 +21,11 @@ This folder contains modified UI files in order to run Gmoccapy with a small tou
     hdmi_drive=2
     ```
 - Copy the content of this folder to your Raspberry
-- Execute deploy.sh
+- Execute deploy_tiny_gmoccapy.sh
     ```console
     cd /[Path to the folder you copied the files to]
-    sudo chmod +x deploy.sh
-    sudo ./deploy.sh
+    sudo chmod +x deploy_tiny_gmoccapy.sh
+    sudo ./deploy_tiny_gmoccapy.sh
     ```
 - You may need to change the DRO size parameter under "Settings - DRO - Size"
 
