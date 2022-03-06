@@ -115,7 +115,7 @@ http://www.linuxcnc.org/iso/
     This configuration will not start out of the Box, because it expects the parport hardware to be present.
     It should run as soon as the next step is done.
 
-3. Change the pinout according to the [example hal and ini file](https://github.com/ChrisWag91/PI-LCNC/tree/master/Linux%CNC%configuration%files) found in this repository.
+3. Change the pinout according to the [example hal and ini file](https://github.com/ChrisWag91/PI-LCNC/tree/master/Linux%20CNC%20configuration%20files) found in this repository.
 
     I would advise to copy the files from this repo and change the machine parameters to fit your machine.
     The files need to be named to [Name of your machine].ini and [Name of your machine].hal.
