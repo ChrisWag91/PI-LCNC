@@ -32,7 +32,7 @@ height="200" border="0" /></a>
 Make sure to check the steps given under *Usage & Setup*
 
 ## Features
-- DC-DC Power Supply for Rapspberry Pi (Input Voltage 8-36V)
+- DC-DC Power Supply for Raspberry Pi (Input Voltage 8-36V)
 - Adapter for LPT connector
 - Pin header for additional 5V signals from the Raspberry Pi
 
@@ -40,7 +40,7 @@ Make sure to check the steps given under *Usage & Setup*
 - 15000 Steps / s max due to Jitter of RPI
 
 ## Get PCB kits here:
-Please contact me under christoph.wagner91@gmail.com if you want to bux a kit containing the PCBs and the hardware.
+Please contact me under christoph.wagner91@gmail.com if you want to buy a kit containing the PCBs and the hardware.
 
 ## Required Hardware
 - 1pcs  Raspberry Pi 4 (4GB or 8GB)
@@ -103,7 +103,7 @@ height="200" border="0" /></a>
 
 4. Make sure that the EN led on the RPI-Levelshifter is on
 
-5. Choose a sample configuration as a starting point:
+5. Choose a sample configuration as a starting point.
 For example: "XYZ-Metric-Sample"
 
 6. Modify the configuration file according to your CNC hardware. The configuration files can be found in one of the folders placed on the desktop:
@@ -137,7 +137,7 @@ This should make your machine move properly if you start the corresponding sampl
 1. Flash realtime capable version of Raspberry Os onto an sd card.
 You can download a precompiled RT-Raspberry Os with Linux CNC already pre installed from this link: 
 http://www.linuxcnc.org/iso/
-(use one of the -pi4 vaiants, tested with 2.8.0)
+(use one of the -pi4 variants, tested with 2.8.0)
 
 2. Now we need to automatically enable the RPI Level Shifter Hat on boot: 
 
