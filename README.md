@@ -84,10 +84,54 @@ height="200" border="0" /></a>
 
 ### Software Setup
 #### The easy way
-1. Download a prepared Raspberry Os from [here](https://drive.google.com/drive/folders/10dqpASeUx74fC9Wrch0KFPeILPTqw7Ok?usp=sharing).
-This image has the specific changes for the RPI-Levelshifter and for the PI-LCNC board already integrated. I ships with a 3 axis configuration for a cnc router.
+
+1. Download a prepared Raspberry Pi 4 Os from [here](https://drive.google.com/drive/folders/10dqpASeUx74fC9Wrch0KFPeILPTqw7Ok?usp=sharing).
+This image has specific changes for the RPI-Levelshifter and for the PI-LCNC board already applied. It ships with a few 3 axis sample configurations for a cnc router.
+
 2. Flash the image to an sd card
-3. Change the .ini and .hal files according to your setup. (watch this space for further details)
+    * For Linux users: Write image to SD card using dd
+
+    ```console
+    sudo dd if=20XX-XX-XX-raspberry-pi_PI_LCNC.img of=/dev/sdx bs=1M status=progress
+    ```
+
+    * For Windows users: Write image to SD card using a tool like [Win32DiskImager](https://win32diskimager.org/)
+3. After the first boot you should end up with a desktop like this (via vnc or display):
+
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_PI-LCNC_RPI_Image.png?raw=true"
+height="200" border="0" /></a>
+
+4. Make sure that the EN led on the RPI-Levelshifter is on
+
+5. Choose a sample configuration as a starting point:
+For example: "XYZ-Metric-Sample"
+
+6. Modify the configuration file according to your CNC hardware. The configuration files can be found in one of the folders placed on the desktop:
+
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_PI-LCNC_RPI_Configuration_pt2.png?raw=true"
+height="200" border="0" /></a>
+
+7. Change the **[Configuration Name].ini** file according to your setup. 
+
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Graphics/F013_PI-LCNC_RPI_Configuration_pt3.png?raw=true"
+height="200" border="0" /></a>
+
+Modify at least these Variables for each of your machines axis:
+
+-	MAX_VELOCITY [User unit / s]
+-	MAX_ACCELERATION [User unit / s²]
+-	MIN_LIMIT [mm]
+-	MAX_LIMIT [mm]
+
+-	STEPGEN_MAXACCEL [User unit / s²]
+-	SCALE [Steps per user unit]
+
+-	SCALE = Motor steps per rev * Microstepping * Gearbox or pully ratio * Leadscrew pitch [rev/user unit]
+-	SCALE = 200 * 2 * 1 * 0,2 (EXAMPLE)
+
+This should make your machine move properly if you start the corresponding sample CNC interface.
+
+8. [OPTIONAL] If you need to make changes to the pinout of the CNC controller, edit the **[Configuration Name].hal** file according to your needs.
 
 #### The hard way
 1. Flash realtime capable version of Raspberry Os onto an sd card.
