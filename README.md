@@ -40,7 +40,7 @@ Make sure to check the steps given under *Usage & Setup*
 - 15000 Steps / s max due to Jitter of RPI
 
 ## Get PCB kits here:
-Please contact me under christoph.wagner91@gmail.com if you want to buy a kit containing the PCBs and the hardware.
+Please contact me under chris@chris-design.at if you want to buy a kit containing the PCBs and the hardware.
 
 ## Required Hardware
 - 1pcs  Raspberry Pi 4 (4GB or 8GB)
