@@ -31,11 +31,5 @@ This folder contains modified UI files in order to run Gmoccapy with a small tou
 
 Result:
 
-<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Gmoccapy mod files/small screen mod 1024x600/tiny_gmoccapy_screenshot.png?raw=true"
+<a target="_blank"><img src="https://github.com/ChrisWag91/PI-LCNC/blob/master/Gmoccapy%20configuration%20files/small%20screen%20mod%201024x600/tiny_gmoccapy_screenshot.png?raw=true"
 height="500" border="0" /></a>
-
-
-
-
-
-
