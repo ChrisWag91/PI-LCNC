@@ -68,7 +68,9 @@ class HAL:
              else: 
                 port2dir =" out"
         if not self.d.sim_hardware:
-            print("loadrt hal_parport cfg=\"%s out%s%s%s%s\"" % (self.d.ioaddr, port2name, port2dir, port3name, port3dir), file=file)
+            #chrisMod:
+            #print("loadrt hal_parport cfg=\"%s out%s%s%s%s\"" % (self.d.ioaddr, port2name, port2dir, port3name, port3dir), file=file)
+            print("loadrt hal_pi_gpio dir=33608191 exclude=33489408", file=file)
         else:
             name='parport.0'
             if self.d.number_pports>1:
@@ -118,6 +120,7 @@ class HAL:
             print("loadrt  plasmac", file=file)
 
         #chrisMod: Print Pi Pinout
+        print(file=file)
         print("# gpio pins:", file=file)
         print("# 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1", file=file)
         print("# 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 (gpio0 not used )", file=file)
@@ -129,9 +132,7 @@ class HAL:
         print("#", file=file)
         print("# 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 1 1 1 1 1 1 1 dir     mask (0 means in   1 means out)      dec 33608191", file=file)
         print("# 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 exclude mask (0 means use  1 means dont use) dec 33489408", file=file)
-
-        print("loadrt hal_pi_gpio dir=33608191 exclude=33489408", file=file)
-
+       
         print(file=file)
         #chrisMod: change parport for hal_pi_gpio
         #print("addf parport.0.read base-thread", file=file)

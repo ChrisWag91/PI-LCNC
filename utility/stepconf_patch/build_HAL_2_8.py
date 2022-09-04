@@ -60,7 +60,9 @@ class HAL:
              else: 
                 port2dir =" out"
         if not self.d.sim_hardware:
-            print >>file, "loadrt hal_parport cfg=\"%s out%s%s%s%s\"" % (self.d.ioaddr, port2name, port2dir, port3name, port3dir)
+            #chrisMod:
+            #print >>file, "loadrt hal_parport cfg=\"%s out%s%s%s%s\"" % (self.d.ioaddr, port2name, port2dir, port3name, port3dir)
+            print >>file, "loadrt hal_pi_gpio dir=33608191 exclude=33489408"
         else:
             name='parport.0'
             if self.d.number_pports>1:
@@ -107,6 +109,7 @@ class HAL:
             print >>file, "loadrt classicladder_rt numPhysInputs=%d numPhysOutputs=%d numS32in=%d numS32out=%d numFloatIn=%d numFloatOut=%d" % (self.d.digitsin , self.d.digitsout , self.d.s32in, self.d.s32out, self.d.floatsin, self.d.floatsout)
 
         #chrisMod: Print Pi Pinout
+        print >>file
         print >>file, "# gpio pins:"
         print >>file, "# 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1"
         print >>file, "# 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 1 0 9 8 7 6 5 4 3 2 (gpio0 not used )"
@@ -118,9 +121,7 @@ class HAL:
         print >>file, "#"
         print >>file, "# 1 0 0 0 0 0 0 0 0 0 1 1 0 1 0 0 0 1 1 1 1 1 1 1 1 1 dir     mask (0 means in   1 means out)      dec 33608191"
         print >>file, "# 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 exclude mask (0 means use  1 means dont use) dec 33489408"
-
-        print >>file, "loadrt hal_pi_gpio dir=33608191 exclude=33489408"
-      
+              
         print >>file
         #chrisMod: change parport for hal_pi_gpio
         #print >>file, "addf parport.0.read base-thread"
