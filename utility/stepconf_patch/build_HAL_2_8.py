@@ -63,13 +63,13 @@ class HAL:
             #chrisMod:
             #print >>file, "loadrt hal_parport cfg=\"%s out%s%s%s%s\"" % (self.d.ioaddr, port2name, port2dir, port3name, port3dir)
             print >>file, "loadrt hal_pi_gpio dir=33608191 exclude=33489408"
-        else:
-            name='parport.0'
-            if self.d.number_pports>1:
-                name='parport.0,parport.1'
-            print >>file, "loadrt sim_parport names=%s"%name
-        if self.a.doublestep():
-            print >>file, "setp parport.0.reset-time %d" % self.d.steptime
+        # else:
+        #     name='parport.0'
+        #     if self.d.number_pports>1:
+        #         name='parport.0,parport.1'
+        #     print >>file, "loadrt sim_parport names=%s"%name
+        # if self.a.doublestep():
+        #     print >>file, "setp parport.0.reset-time %d" % self.d.steptime
         encoder = SIG.PHA in inputs
         counter = SIG.PHB not in inputs
         probe = SIG.PROBE in inputs
@@ -127,10 +127,10 @@ class HAL:
         #print >>file, "addf parport.0.read base-thread"
         print >>file, "addf hal_pi_gpio.read  base-thread"
 
-        if self.d.number_pports > 1:
-            print >>file, "addf parport.1.read base-thread"
-        if self.d.number_pports > 2:
-            print >>file, "addf parport.2.read base-thread"
+        # if self.d.number_pports > 1:
+        #     print >>file, "addf parport.1.read base-thread"
+        # if self.d.number_pports > 2:
+        #     print >>file, "addf parport.2.read base-thread"
         if self.d.sim_hardware:
             print >>file, "source sim_hardware.hal"
             if encoder:
@@ -142,12 +142,12 @@ class HAL:
         #chrisMod: change parport for hal_pi_gpio        
         #print >>file, "addf parport.0.write base-thread"
         print >>file, "addf hal_pi_gpio.write base-thread"
-        if self.a.doublestep():
-            print >>file, "addf parport.0.reset base-thread"
-        if self.d.number_pports > 1:
-            print >>file, "addf parport.1.write base-thread"
-        if self.d.number_pports > 2:
-            print >>file, "addf parport.2.write base-thread"
+        # if self.a.doublestep():
+        #     print >>file, "addf parport.0.reset base-thread"
+        # if self.d.number_pports > 1:
+        #     print >>file, "addf parport.1.write base-thread"
+        # if self.d.number_pports > 2:
+        #     print >>file, "addf parport.2.write base-thread"
         print >>file
         print >>file, "addf stepgen.capture-position servo-thread"
         if self.d.sim_hardware:
@@ -684,9 +684,9 @@ class HAL:
         if i and not fake: print >>file, "setp hal_pi_gpio.pin-%02d-out-invert%s 1" %(num, ending)
         print >>file, "net %s => hal_pi_gpio.pin-%02d-out%s" % (signame, num, ending)
 
-        if self.a.doublestep() and not fake:
-            if p in (SIG.XSTEP, SIG.YSTEP, SIG.ZSTEP, SIG.ASTEP, SIG.USTEP, SIG.VSTEP):
-                print >>file, "setp parport.0.pin-%02d-out-reset%s 1" % (num,ending)
+        # if self.a.doublestep() and not fake:
+        #     if p in (SIG.XSTEP, SIG.YSTEP, SIG.ZSTEP, SIG.ASTEP, SIG.USTEP, SIG.VSTEP):
+        #         print >>file, "setp parport.0.pin-%02d-out-reset%s 1" % (num,ending)
 
     def min_lim_sig(self, axis):
         inputs = self.a.build_input_set()
