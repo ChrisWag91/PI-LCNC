@@ -927,7 +927,8 @@ class StepconfApp:
         self.w.pin9.set_active(7)
 
     #chrisMod
-    def preset_PI-LCNC_3axes_outputs(self):
+    
+    def preset_PI_LCNC_3axes_outputs(self):
         SIG = self._p
         def index(signal):
             return self._p.hal_output_names.index(signal)
