@@ -20,3 +20,8 @@ curl -O https://raw.githubusercontent.com/ChrisWag91/PI-LCNC/master/utility/step
 #Default file for lcnc 2.8
 #curl -O https://raw.githubusercontent.com/LinuxCNC/linuxcnc/2.8/src/emc/usr_intf/stepconf/stepconf.py
 sudo mv stepconf_2_8.py /usr/lib/python2.7/dist-packages/stepconf/stepconf.py
+
+curl -O https://raw.githubusercontent.com/ChrisWag91/PI-LCNC/master/utility/stepconf_patch/pport1_2_8.glade
+#Default file for lcnc 2.8
+#curl -O https://raw.githubusercontent.com/LinuxCNC/linuxcnc/2.8/src/emc/usr_intf/stepconf/pport1.glade
+sudo mv pport1_2_8.glade /usr/share/linuxcnc/stepconf/pport1.glade
